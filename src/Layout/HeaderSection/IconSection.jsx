@@ -10,7 +10,7 @@ const IconSection = () => {
         <div>
             <div className='bg-[#ECEAE3]'>
                 <div className=' md:flex justify-center p-8 gap-8'>
-                    <div className='mb-8 '>
+                    <div className='mb-8'>
                         <img src={icon1} alt="" />
                         <h1 className=' text-[#331A15] font-bold font-serif italic text-2xl mt-2 mb-2'>Awesome Aroma</h1>
                         <p className='text-slate-600 font-serif'>You will definitely be a fan of the design <br /> & aroma of your coffee</p>
