@@ -5,8 +5,10 @@ import bacground from '../../imag/bacground.png'
 import { FaCoffee } from 'react-icons/fa';
 import Instagram from '../Instagram/Instagram';
 import { Link } from 'react-router-dom';
+import CardCoffee from '../CardCoffee/CardCoffee';
 
-const CoffeeSection = () => {
+const CoffeeSection = ({ coffees }) => {
+
     return (
         <div>
             <div>
@@ -20,6 +22,12 @@ const CoffeeSection = () => {
                                 <Link to='/addCoffe'>  <button className="p-3  mt-4 hover:bg-transparent hover:border hover:border-black hover:text-black bg-[#E3B577] hover:bg-[#ECEAE3] font-serif italic font-bold transition duration-4 00 ease-in-out md:ease-in btn-outline flex"><span>Add Coffee</span><FaCoffee className='mt-1 ml-2 text-lg' /></button></Link>
                             </div>
                         </div>
+                        <div className=' flex'>   {
+                            coffees.map(coffee => <CardCoffee
+                                coffee={coffee} key={coffee._id}
+
+                            ></CardCoffee>)
+                        }</div>
                     </div>
 
                 </div>
