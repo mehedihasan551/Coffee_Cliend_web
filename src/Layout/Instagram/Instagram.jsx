@@ -12,7 +12,7 @@ const Instagram = () => {
     return (
         <div>
             <div>
-                <div className=' text-center'>
+                <div className=' text-center mt'>
                     <p className='text-slate-600 font-serif text-xl'>Follow Us Now</p>
                     <h1 className=' text-[#331A15] font-bold font-serif italic text-5xl text-center mt-2 mb-2 ml-16'>Follow on Instagram</h1>
                 </div>
